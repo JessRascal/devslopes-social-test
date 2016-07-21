@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>932154215856-p2vv8vkc62adpga3k6vjgucbgn19k840.apps.googleusercontent.com</string>
+	<string>216972207710-k6k7qu5qb7c0g4nl2bp2cbmrhgtl90ra.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.932154215856-p2vv8vkc62adpga3k6vjgucbgn19k840</string>
+	<string>com.googleusercontent.apps.216972207710-k6k7qu5qb7c0g4nl2bp2cbmrhgtl90ra</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAKzzqStt6SocyC0DsqNkNSVpPceOlI6F4</string>
+	<string>AIzaSyDp7HjDgYUEUg-CkUmTPgWQvgHQ-fkHBpI</string>
 	<key>GCM_SENDER_ID</key>
-	<string>932154215856</string>
+	<string>216972207710</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.justonejess.devslopes-social-test</string>
 	<key>PROJECT_ID</key>
-	<string>devslopes-social-test-2</string>
+	<string>devslopes-social-test</string>
 	<key>STORAGE_BUCKET</key>
-	<string>devslopes-social-test-2.appspot.com</string>
+	<string>devslopes-social-test.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:932154215856:ios:21c0bf4e3f1a0281</string>
+	<string>1:216972207710:ios:21c0bf4e3f1a0281</string>
 	<key>DATABASE_URL</key>
-	<string>https://devslopes-social-test-2.firebaseio.com</string>
+	<string>https://devslopes-social-test.firebaseio.com</string>
 </dict>
 </plist>

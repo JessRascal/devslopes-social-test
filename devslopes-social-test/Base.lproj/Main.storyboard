@@ -3,14 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sign InVC-->
+        <!--SignInVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="devslopes_social_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="SignInVC" customClass="SignInVC" customModule="devslopes_social_test" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -42,13 +41,6 @@
                                     <constraint firstAttribute="bottom" secondItem="iaJ-XG-hWO" secondAttribute="bottom" constant="8" id="umQ-vb-N2v"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnH-iW-guZ" customClass="RoundBtn" customModule="devslopes_social_test" customModuleProvider="target">
-                                <color key="backgroundColor" red="0.25490196078431371" green="0.36078431372549019" blue="0.64313725490196083" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="anA-VZ-fVQ"/>
-                                    <constraint firstAttribute="width" secondItem="CnH-iW-guZ" secondAttribute="height" multiplier="1:1" id="d81-4x-0Rv"/>
-                                </constraints>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JxB-ot-TAI">
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="omL-RX-SWy" customClass="FancyTextField" customModule="devslopes_social_test" customModuleProvider="target">
@@ -76,6 +68,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gqh-tW-Iva"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -87,24 +82,45 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="CnH-iW-guZ" firstAttribute="top" secondItem="jvC-v7-BN6" secondAttribute="bottom" constant="75" id="44r-ye-IA9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zTW-Fd-eqY" secondAttribute="bottom" id="7v1-9H-h4f"/>
                             <constraint firstAttribute="trailing" secondItem="jvC-v7-BN6" secondAttribute="trailing" id="CY2-Pr-mnm"/>
-                            <constraint firstItem="zTW-Fd-eqY" firstAttribute="top" secondItem="JxB-ot-TAI" secondAttribute="bottom" constant="75" id="Km9-pH-tee"/>
                             <constraint firstItem="UBb-Cq-662" firstAttribute="top" secondItem="jvC-v7-BN6" secondAttribute="bottom" constant="20" id="S5S-vC-Atc"/>
                             <constraint firstAttribute="trailing" secondItem="zTW-Fd-eqY" secondAttribute="trailing" id="Ze5-EV-J5D"/>
                             <constraint firstItem="jvC-v7-BN6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bdl-Df-Clo"/>
                             <constraint firstItem="JxB-ot-TAI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nf9-NV-k4f"/>
                             <constraint firstItem="zTW-Fd-eqY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pJf-6S-1Dc"/>
                             <constraint firstItem="UBb-Cq-662" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qDY-Iw-4m3"/>
+                            <constraint firstItem="JxB-ot-TAI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qMp-23-fG1"/>
                             <constraint firstItem="jvC-v7-BN6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ty7-FM-Uap"/>
-                            <constraint firstItem="CnH-iW-guZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y0Y-ZQ-dAi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="omL-RX-SWy" id="CQB-sY-DzK"/>
+                        <outlet property="pwdField" destination="5rD-iS-bJ0" id="tkV-fR-5NB"/>
+                        <segue destination="qy7-70-Mc5" kind="show" identifier="signedIn" id="VId-zf-puZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+        <!--FeedVC-->
+        <scene sceneID="rYs-XT-qz5">
+            <objects>
+                <viewController id="qy7-70-Mc5" customClass="FeedVC" customModule="devslopes_social_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Myt-qh-dlS"/>
+                        <viewControllerLayoutGuide type="bottom" id="DUV-RI-DwK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C2S-U6-LLp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h4o-dY-oDp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="37"/>
         </scene>
     </scenes>
 </document>

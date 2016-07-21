@@ -13,7 +13,9 @@
 		C805CC1A1D3EE03900E6AE14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C805CC181D3EE03900E6AE14 /* Main.storyboard */; };
 		C805CC1C1D3EE03A00E6AE14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C805CC1B1D3EE03A00E6AE14 /* Assets.xcassets */; };
 		C805CC1F1D3EE03A00E6AE14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C805CC1D1D3EE03A00E6AE14 /* LaunchScreen.storyboard */; };
-		C87F24AD1D3F503C002F58EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C87F24AC1D3F503C002F58EB /* GoogleService-Info.plist */; };
+		C87C091A1D41656E001AE3BC /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87C09191D41656E001AE3BC /* FeedVC.swift */; };
+		C87C091E1D417314001AE3BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C87C091D1D417314001AE3BC /* GoogleService-Info.plist */; };
+		C87F24AD1D3F503C002F58EB /* GoogleService-InfoORIGINAL.plist in Resources */ = {isa = PBXBuildFile; fileRef = C87F24AC1D3F503C002F58EB /* GoogleService-InfoORIGINAL.plist */; };
 		C87F24B21D400A15002F58EB /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F24B11D400A15002F58EB /* RoundBtn.swift */; };
 		C87F24B51D401EEF002F58EB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F24B41D401EEF002F58EB /* Constants.swift */; };
 		C87F24B91D4021A2002F58EB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C87F24B81D4021A2002F58EB /* HeaderView.swift */; };
@@ -32,7 +34,9 @@
 		C805CC1B1D3EE03A00E6AE14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C805CC1E1D3EE03A00E6AE14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C805CC201D3EE03A00E6AE14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C87F24AC1D3F503C002F58EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C87C09191D41656E001AE3BC /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		C87C091D1D417314001AE3BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C87F24AC1D3F503C002F58EB /* GoogleService-InfoORIGINAL.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-InfoORIGINAL.plist"; sourceTree = "<group>"; };
 		C87F24B11D400A15002F58EB /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		C87F24B41D401EEF002F58EB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C87F24B81D4021A2002F58EB /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -99,7 +103,8 @@
 				C805CC1B1D3EE03A00E6AE14 /* Assets.xcassets */,
 				C805CC1D1D3EE03A00E6AE14 /* LaunchScreen.storyboard */,
 				C805CC201D3EE03A00E6AE14 /* Info.plist */,
-				C87F24AC1D3F503C002F58EB /* GoogleService-Info.plist */,
+				C87F24AC1D3F503C002F58EB /* GoogleService-InfoORIGINAL.plist */,
+				C87C091D1D417314001AE3BC /* GoogleService-Info.plist */,
 			);
 			path = "devslopes-social-test";
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				C805CC161D3EE03900E6AE14 /* SignInVC.swift */,
+				C87C09191D41656E001AE3BC /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -173,6 +179,7 @@
 				TargetAttributes = {
 					C805CC101D3EE03900E6AE14 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -200,9 +207,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C87F24AD1D3F503C002F58EB /* GoogleService-Info.plist in Resources */,
+				C87F24AD1D3F503C002F58EB /* GoogleService-InfoORIGINAL.plist in Resources */,
 				C805CC1F1D3EE03A00E6AE14 /* LaunchScreen.storyboard in Resources */,
 				C805CC1C1D3EE03A00E6AE14 /* Assets.xcassets in Resources */,
+				C87C091E1D417314001AE3BC /* GoogleService-Info.plist in Resources */,
 				C805CC1A1D3EE03900E6AE14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C87F24B91D4021A2002F58EB /* HeaderView.swift in Sources */,
+				C87C091A1D41656E001AE3BC /* FeedVC.swift in Sources */,
 				C87F24B21D400A15002F58EB /* RoundBtn.swift in Sources */,
 				C805CC171D3EE03900E6AE14 /* SignInVC.swift in Sources */,
 				C805CC151D3EE03900E6AE14 /* AppDelegate.swift in Sources */,
@@ -388,6 +397,8 @@
 			baseConfigurationReference = C7AC9A5213BBDEE32A50DDC6 /* Pods-devslopes-social-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "devslopes-social-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justonejess.devslopes-social-test";
@@ -401,6 +412,8 @@
 			baseConfigurationReference = 30949996AFDE16F29007EED7 /* Pods-devslopes-social-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "devslopes-social-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justonejess.devslopes-social-test";
