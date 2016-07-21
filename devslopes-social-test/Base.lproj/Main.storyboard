@@ -48,6 +48,9 @@
                                     <constraint firstAttribute="width" constant="150" id="anA-VZ-fVQ"/>
                                     <constraint firstAttribute="width" secondItem="CnH-iW-guZ" secondAttribute="height" multiplier="1:1" id="d81-4x-0Rv"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fuN-fc-HG2"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JxB-ot-TAI">
                                 <subviews>
