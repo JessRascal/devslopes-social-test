@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B61CA607AB7387B9ABEB1C9 /* Pods_devslopes_social_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB85209E2492FDA120A28EC /* Pods_devslopes_social_test.framework */; };
+		A4423093E09F04D9612A6019 /* Pods_devslopes_social_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D89744F491C7265CB441405 /* Pods_devslopes_social_test.framework */; };
 		C805CC151D3EE03900E6AE14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805CC141D3EE03900E6AE14 /* AppDelegate.swift */; };
 		C805CC171D3EE03900E6AE14 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C805CC161D3EE03900E6AE14 /* SignInVC.swift */; };
 		C805CC1A1D3EE03900E6AE14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C805CC181D3EE03900E6AE14 /* Main.storyboard */; };
@@ -22,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D89744F491C7265CB441405 /* Pods_devslopes_social_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devslopes_social_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30949996AFDE16F29007EED7 /* Pods-devslopes-social-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-social-test/Pods-devslopes-social-test.release.xcconfig"; sourceTree = "<group>"; };
+		C7AC9A5213BBDEE32A50DDC6 /* Pods-devslopes-social-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-social-test/Pods-devslopes-social-test.debug.xcconfig"; sourceTree = "<group>"; };
 		C805CC111D3EE03900E6AE14 /* devslopes-social-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "devslopes-social-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C805CC141D3EE03900E6AE14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C805CC161D3EE03900E6AE14 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -35,9 +38,6 @@
 		C87F24B81D4021A2002F58EB /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C87F24BA1D40229B002F58EB /* WideButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WideButton.swift; sourceTree = "<group>"; };
 		C87F24BC1D402736002F58EB /* FancyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyTextField.swift; sourceTree = "<group>"; };
-		D403D8C90835E02D9578F643 /* Pods-devslopes-social-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-social-test/Pods-devslopes-social-test.debug.xcconfig"; sourceTree = "<group>"; };
-		DC52CA8A9605CE1794407D37 /* Pods-devslopes-social-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devslopes-social-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-devslopes-social-test/Pods-devslopes-social-test.release.xcconfig"; sourceTree = "<group>"; };
-		FAB85209E2492FDA120A28EC /* Pods_devslopes_social_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devslopes_social_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,18 +45,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B61CA607AB7387B9ABEB1C9 /* Pods_devslopes_social_test.framework in Frameworks */,
+				A4423093E09F04D9612A6019 /* Pods_devslopes_social_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0360EC301C04B2B082C7C028 /* Pods */ = {
+		51FE57856DED606420E19894 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D403D8C90835E02D9578F643 /* Pods-devslopes-social-test.debug.xcconfig */,
-				DC52CA8A9605CE1794407D37 /* Pods-devslopes-social-test.release.xcconfig */,
+				0D89744F491C7265CB441405 /* Pods_devslopes_social_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7AACAD20C00B736451A7F2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7AC9A5213BBDEE32A50DDC6 /* Pods-devslopes-social-test.debug.xcconfig */,
+				30949996AFDE16F29007EED7 /* Pods-devslopes-social-test.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -66,8 +74,8 @@
 			children = (
 				C805CC131D3EE03900E6AE14 /* devslopes-social-test */,
 				C805CC121D3EE03900E6AE14 /* Products */,
-				0360EC301C04B2B082C7C028 /* Pods */,
-				ED063689DCE8B01AA7E09B0F /* Frameworks */,
+				C7AACAD20C00B736451A7F2B /* Pods */,
+				51FE57856DED606420E19894 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,14 +138,6 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
-		ED063689DCE8B01AA7E09B0F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FAB85209E2492FDA120A28EC /* Pods_devslopes_social_test.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -173,9 +173,6 @@
 				TargetAttributes = {
 					C805CC101D3EE03900E6AE14 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = E32WVF474V;
-						DevelopmentTeamName = "Michael Jessey";
-						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -388,36 +385,23 @@
 		};
 		C805CC241D3EE03A00E6AE14 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D403D8C90835E02D9578F643 /* Pods-devslopes-social-test.debug.xcconfig */;
+			baseConfigurationReference = C7AC9A5213BBDEE32A50DDC6 /* Pods-devslopes-social-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/**",
-				);
 				INFOPLIST_FILE = "devslopes-social-test/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justonejess.devslopes-social-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C805CC251D3EE03A00E6AE14 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC52CA8A9605CE1794407D37 /* Pods-devslopes-social-test.release.xcconfig */;
+			baseConfigurationReference = 30949996AFDE16F29007EED7 /* Pods-devslopes-social-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/**",
-				);
 				INFOPLIST_FILE = "devslopes-social-test/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.justonejess.devslopes-social-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
